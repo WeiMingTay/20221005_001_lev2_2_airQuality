@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lev2_2 air quality</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <main id="background">
+        <form action="#" onsubmit="return false">
+            <label for="aqi">AQI (air-quality-index): <span id="ausgabeAqi"></span></label>
+            <input type="range" id="aqi" name="aqi" step="1.0" min="0" max="150" oninput="checkAirQuality()">
+        </form>
+        <p>Level of health concern: <span id="healthConcern"></span></p>
+        <p>Level of health effect: <span id="healthEffect"></span></p>
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
